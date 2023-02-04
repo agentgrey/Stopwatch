@@ -1,0 +1,95 @@
+body {
+    background-color:palevioletred;
+    margin: 0;
+}
+
+
+/* styles for the header */
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.header p {
+    margin-left: 37%;
+    font-size: 50px;
+    font-weight: 800;
+    color:whitesmoke;
+}
+/* toggle button for light and dark mode */
+#toggle {
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+.switch {
+    visibility: hidden;
+}
+.mode {
+  width: 50px;
+  height: 15px;
+  background-color: pink;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+}
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+/* when clicked on the toggle button */
+.switch:checked + .mode .ball {
+  transform: translateX(31px);
+}
+
+
+/* styles for the body */
+.container {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#timer {
+    display: flex;
+    font-family: 'Courier';
+    font-size: 8rem;
+    color: whitesmoke;
+    justify-content: center;
+    margin-top: 40px;
+}
+#label {
+    font-size: 20px;
+    color: palevioletred;
+    font-weight: bold;
+}
+#hh {margin-left: 140px;}
+#mm {margin-left: 170px;}
+#ss {margin-left: 155px;}
+#ms {margin-left: 140px;}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.buttons button {
+    margin: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    border-color: unset;
+    color:palevioletred;
+    font-size: 18px;
+    font-weight: 800;
+}
