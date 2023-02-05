@@ -74,7 +74,7 @@ body {
     color: palevioletred;
     font-weight: bold;
 }
-#hh {margin-left: 140px;}
+#hh {margin-left: 135px;}
 #mm {margin-left: 170px;}
 #ss {margin-left: 155px;}
 #ms {margin-left: 140px;}
@@ -88,8 +88,15 @@ body {
     width: 150px;
     height: 40px;
     border-radius: 7px;
-    border-color: unset;
+    border:2px dashed;
     color:palevioletred;
     font-size: 18px;
     font-weight: 800;
 }
+
+/* initial state of stop and rest button */
+#stop, #reset {
+    border: none;
+    opacity: 0.7;
+}
+
