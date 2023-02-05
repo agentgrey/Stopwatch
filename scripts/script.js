@@ -36,7 +36,7 @@ function startTimer() {
     milsecs.innerHTML = "0" + ms;
   }
   if(s>=10) {
-    seconds.innerHTML = s;          // to maintain the proper display
+    seconds.innerHTML = s +":";          // to maintain the proper display
   }
   if(s>=60) {                       // one minute completed
     m++;
@@ -56,7 +56,7 @@ function startTimer() {
 }
 
 // when start button is clicked
-start.onclick = function () {
+function onClick() {
   if (interval) {
     clearInterval(interval);
   }
