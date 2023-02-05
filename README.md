@@ -6,7 +6,7 @@
 * Start : Starts the stopwatch
 * Stop : Stops/Pauses the stopwatch
 * Reset : Resets the stopwatch
-* Toggle Button : Switches between dark and light mode
+* Switches between dark and light mode
 ***
 ### ScreenShots
 * On big screen, start button pressed (light mode)
