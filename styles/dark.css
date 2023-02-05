@@ -1,5 +1,5 @@
 body {
-    background-color:#3b3939;
+    background-color:#302e2e;
     margin: 0;
 }
 
@@ -9,19 +9,20 @@ body {
     height: 100px;
     width: 100%;
     display: flex;
-    align-items: center;
     margin-bottom: 10px;
 }
 .header p {
-    margin-left: 37%;
+    margin-left: 10%;
     font-size: 50px;
     font-weight: 800;
     color:black;
 }
 /* toggle button for light and dark mode */
 #toggle {
-    margin-left: 20%;
-    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    align-self: flex-end;
 }
 .switch {
     visibility: hidden;
@@ -53,44 +54,49 @@ body {
 
 /* styles for the body */
 .container {
-    background-color:  rgb(60, 52, 116);
+    background-color: rgb(60, 52, 116);
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 40%;
     width: 80%;
     margin-left: 10%;
     margin-top: 5%;
 }
-#timer {
+.view {
     display: flex;
-    font-family: 'Courier';
-    font-size: 8rem;
-    color: black;
     justify-content: center;
     margin-top: 40px;
-}#label {
-    font-size: 20px;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+}
+.timer {
+    font-family: 'Courier';
+    font-size: 10vw;
+    color: black;
+    margin: 0;
+}
+.label {
+    font-size: 1.8vw;
     color: black;
     font-weight: bold;
+    margin: 0;
 }
-#hh {margin-left: 135px;}
-#mm {margin-left: 170px;}
-#ss {margin-left: 155px;}
-#ms {margin-left: 140px;}
 .buttons {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 4vw;
 }
 .buttons button {
-    margin: 20px;
-    width: 150px;
+    margin: 1.5vw;
+    width: 15vw;
     height: 40px;
     border-radius: 7px;
-    border: 2px dashed black;
+    border:2px dashed;
     color:black;
     background-color: #3b3939;
-    font-size: 18px;
+    font-size: 1.7vw;
     font-weight: 800;
 }
 
@@ -99,3 +105,10 @@ body {
     border: none;
     opacity: 0.7;
 }
+
+
+/* on hover style*/
+.ball:hover {
+ cursor: pointer;
+}
+

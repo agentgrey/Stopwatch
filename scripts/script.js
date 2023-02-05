@@ -31,7 +31,7 @@ function startTimer() {
   }
   else if(ms>=100) {                // one second completed
     s++;
-    seconds.innerHTML = "0" + s;
+    seconds.innerHTML = "0" + s +":";
     ms=00;
     milsecs.innerHTML = "0" + ms;
   }
@@ -40,18 +40,18 @@ function startTimer() {
   }
   if(s>=60) {                       // one minute completed
     m++;
-    minutes.innerHTML = "0" + m;
+    minutes.innerHTML = "0" + m +":";
     s=00;
-    seconds.innerHTML = "0" + 0;
+    seconds.innerHTML = "0" + 0 +":";
   }
   if(m>=10) {
-    minutes.innerHTML = m;           // to maintain the proper display
+    minutes.innerHTML = m +":";           // to maintain the proper display
   }
   if(m>=60) {                        // one hour completed
     h++;
-    hour.innerHTML = "0" + h; 
+    hour.innerHTML = "0" + h +":"; 
     m=00;   
-    minutes.innerHTML = "0" + m;
+    minutes.innerHTML = "0" + m +":";
   }
 }
 
@@ -93,9 +93,9 @@ function resetTimer() {
     m=00;
     s=00;
     ms=00;
-    hour.innerHTML = "0" + h; 
-    minutes.innerHTML = "0" + m;
-    seconds.innerHTML = "0" + s;
+    hour.innerHTML = "0" + h +":"; 
+    minutes.innerHTML = "0" + m +":";
+    seconds.innerHTML = "0" + s +":";
     milsecs.innerHTML = "0" + ms;
 
     
